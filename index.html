@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/burgerMenu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -22,20 +24,26 @@
     <header class="header ">
       <div class="container">
         <div class="header__top">
-          <nav class="nav">
+          <nav class="nav ">
             <div>
               <h2 class="logo"><a href="#">GoTrip</a></h2>
             </div>
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--header">
               <li><a href="#" class="active">Home</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <ul class="nav__login">
+            <ul class="nav__login nav__login--header">
               <li><a href="#">Sing up</a></li>
               <li><a href="#" class="btn__login">Login</a></li>
             </ul>
+
+            <button type="button" class="nav__toggle">
+              <div class="menu-icon-wrapper">
+                <div class="menu-icon"></div>
+              </div>
+            </button>
           </nav>
         </div>
 
