@@ -314,8 +314,6 @@ body {
 .customers__img img {
   border-radius: 60px;
 }
-.customers__content {
-}
 .customers__title {
   width: 565px;
   font-size: 45px;
@@ -332,8 +330,6 @@ body {
   height: 134px;
   border-radius: 50%;
   margin-right: 33px;
-}
-.review__client-desc {
 }
 .review__client-desc-name {
   font-size: 33px;
@@ -465,10 +461,10 @@ body {
   .nav__list--header {
     display: none;
   }
-  .nav__login--header{
+  .nav__login--header {
     display: none;
   }
-  .nav__list{
+  .nav__list {
     column-gap: 50px;
   }
   .nav__toggle {
@@ -510,6 +506,9 @@ body {
     font-size: 34px;
     padding: 40px 0;
   }
+  .nav__list {
+    column-gap: 50px;
+  }
   .slider {
     height: 304px;
   }
@@ -523,6 +522,9 @@ body {
     width: 253px;
     height: 304px;
   }
+ .nav__login {
+  column-gap: 0;
+ }
 }
 @media (max-width: 850px) {
   .header {
@@ -563,7 +565,7 @@ body {
     font-size: 20px;
     border-radius: 18px;
   }
-  .destinations{
+  .destinations {
     padding: 40px 0 50px;
   }
   .destinations__row {
@@ -573,7 +575,7 @@ body {
   .destinations__slider {
     width: 100%;
   }
-  .destinations__title{
+  .destinations__title {
     margin-bottom: 10px;
     font-size: 35px;
   }
@@ -581,13 +583,13 @@ body {
     font-size: 20px;
     display: block;
   }
-  .destinations__text{
+  .destinations__text {
     margin-bottom: 30px;
     font-size: 20px;
   }
   .btn {
     padding: 20px 35px;
-    border-radius:20px;
+    border-radius: 20px;
     font-size: 18px;
   }
   .slider__btn--next {
@@ -610,7 +612,10 @@ body {
     margin-bottom: 25px;
     font-size: 35px;
     width: auto;
-  }
+  } 
+  .customers__img img {
+    max-width: 300px;
+  }  
   .review__client {
     column-gap: 30px;
     margin-bottom: 20px;
@@ -629,25 +634,22 @@ body {
   .review__text {
     font-size: 18px;
     margin-bottom: 20px;
+    width: 330px;
+    
   }
+  
   .review__rating {
     max-width: 200px;
   }
-  .customers__img img {
-    max-width: 300px;
-  }
+ 
   .cta {
-    padding: 20px 0;
-  }
-  .cta__title {
-    font-size: 34px;
-    padding: 20px 0;
+    padding: 50px 0;
   }
   .cta__text {
     font-size: 20px;
   }
   .cta__plate {
-    min-height: 350px;
+    min-height: 380px;
     padding: 20px 0;
     border-radius: 40px;
   }
@@ -657,13 +659,93 @@ body {
   .subscribe__title {
     font-size: 34px;
   }
+  .subscribe-form__input,
+  .subscribe-form__input::placeholder {
+    width: 200px;
+  }
   .nav {
-    column-gap: 50px;
+    column-gap: 70px;
+  }
+  .nav__login {
+    display: none;
+   }
+}
+@media (max-width: 600px) {
+  .cta__title {
+    width: 400px;
+    font-size: 30px;
+  }
+  .subscribe__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  .subscribe-form__input,
+  .subscribe-form__input::placeholder {
+    width: 150px;
+  }
+  .subscribe-form__btn {
+    border-radius: 30px;
+    padding: 25px 45px;
+    font-size: 20px;
+  }
+  .nav__list {
+    column-gap: 20px;
   }
 }
 @media (max-width: 460px) {
   .nav--mobile .nav__toggle {
     top: 20px;
     right: 20px;
+  }
+  .customers__img img {
+    border-radius: 40px;
+    width: 200px;
+  }
+  .cta {
+    padding: 10px 0;
+  }
+  .cta__title {
+    font-size: 25px;
+  }
+  .cta__plate::before {
+    left: 40px;
+    bottom: 30px;
+  }
+  .cta__plate::after {
+    top: 30px;
+    right: 40px;
+  }
+  .subscribe__title {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .subscribe-form {
+    padding: 12px 15px 11.4px 20px;
+  }
+  .subscribe-form {
+    padding: 12px 15px 11.4px 20px;
+    display: flex;
+  }
+  .subscribe-form__input,
+  .subscribe-form__input::placeholder {
+    width: 120px;
+  }
+  .subscribe-form__btn {
+    border-radius: 20px;
+    padding: 20px 35px;
+    font-size: 18px;
+  }
+  .logo--footer a {
+    font-size: 15px;
+  }
+  .footer .nav {
+    display: block;
+  }
+  .logo--footer {
+    padding-bottom: 15px;
+    padding-top: 1px;
+  }
+  .footer {
+    padding: 0 0 25px;
   }
 }
